@@ -1,0 +1,1074 @@
+/*sm : >=576
+  md : >=768
+  lg   >=992
+*/
+/* 背景相關設定 */
+
+.border {
+  border: 3px solid red;
+  /* height: 300px; */
+  /* position: absolute;
+  top: 10rem; */
+}
+
+.background-container {
+  /* border: 3px solid gray; */
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.text {
+  display: none;
+}
+
+.vh-90 {
+  height: 90vh;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/background-new.png");
+  /* background-size: cover; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.background-ticket {
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/ticket-new.png");
+  /* background-size: cover; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffcf03;
+}
+
+.background-ticket-2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/background-phone2.png");
+  /* background-size: cover; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffcf03;
+  min-height: 100vh;
+  position: fixed;
+}
+
+.background-test {
+  position: relative;
+  z-index: -5;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  min-height: 100vh;
+}
+
+/* test */
+
+.content {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.content-form {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 0rem;
+}
+/* home.js */
+.btn-entrance {
+  font-size: 1.2rem;
+  width: 10rem;
+  font-weight: bold;
+  color: red;
+  background-color: lightgray;
+  padding: 0.8rem 0rem;
+  border: none;
+  border-radius: 10px;
+}
+/* company.js */
+.inform {
+  color: red;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  margin-top: 5rem;
+}
+.btn-ticket {
+  background-color: lightgray;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 7rem;
+  padding: 0px 10px;
+  border: none;
+  border-radius: 10px;
+}
+.form-control {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  /* width: 10rem; */
+  width: 60%;
+  /* height: 80%; */
+  margin-bottom: 7rem;
+}
+
+.btn-get-ticket {
+  color: black;
+  background-color: lightgray;
+  font-size: 0.8rem;
+  font-weight: bold;
+  position: absolute;
+  top: 11rem;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 10px;
+}
+/* newForm */
+.inform-newForm {
+  color: red;
+  font-size: 0.8rem;
+  position: absolute;
+  top: -3rem;
+  font-weight: bold;
+}
+
+.inform-newForm-2 {
+  color: red;
+  font-size: 0.8rem;
+  position: absolute;
+  top: -1.75rem;
+  font-weight: bold;
+}
+
+.company-name {
+  background-color: lightgray;
+  color: black;
+  font-size: 0.7rem;
+  font-weight: bold;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 0.6rem;
+  white-space: nowrap;
+}
+.btn-form {
+  color: black;
+  background-color: lightgray;
+  font-size: 0.5rem;
+  font-weight: bold;
+  width: 8rem;
+  border-radius: 10px;
+  border: none;
+  padding: 6px;
+}
+.input-form {
+  color: black;
+  font-size: 0.6rem;
+  font-weight: bold;
+  width: 10rem;
+  padding: 2.5px;
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+
+.btn-yellow {
+  background-color: #ffd700 !important;
+}
+
+.limit {
+  background-color: lightgray;
+}
+
+.btn-get-form {
+  color: black;
+  background-color: lightgray;
+  border-radius: 10px;
+  border: none;
+  position: absolute;
+  top: calc(50% + 5.5rem);
+  padding: 3px 2px;
+  width: 4rem;
+  font-size: 0.55rem;
+  font-weight: bold;
+}
+/* QRCODE */
+.inform-qrcode {
+  color: red;
+  font-size: 0.6rem;
+  font-weight: bold;
+  position: absolute;
+  top: calc(30% - 0.75rem);
+}
+.qrcode {
+  font-weight: bold;
+  width: auto;
+  max-width: 12vw;
+  min-width: 80px;
+  /* position: absolute; */
+  /* flex: 1 0; */
+}
+.service {
+  color: #2f5597;
+  position: absolute;
+  top: 40%;
+  font-size: 0.8rem;
+  text-align: left;
+}
+.test {
+  color: black;
+  border: 3px solid black;
+}
+.test2 {
+  position: absolute;
+  top: 10rem;
+}
+.test3 {
+  /* border: 3px solid yellow; */
+  position: absolute;
+  top: 13rem;
+}
+
+.qr-codes-container {
+  max-width: 100%;
+  overflow-x: auto;
+  position: absolute;
+  top: calc(75%);
+}
+
+.qr-code-item {
+  flex: 0 0 auto;
+  /* width: 120px; */
+  overflow-x: hidden;
+  /* position: absolute;
+  top: 3rem; */
+}
+
+.qr-code-title {
+  font-size: 9px;
+  font-weight: bold;
+  /* position: absolute;
+  top: -1rem; */
+}
+
+.btn-login {
+  color: black;
+  background-color: lightgray;
+  font-size: 1.35rem;
+  font-weight: bold;
+  position: absolute;
+  top: calc(55% + 3rem);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+}
+/* record  */
+.mx-w1 {
+  max-width: 150px;
+  overflow-wrap: break-word;
+}
+
+/* 響應式設定 */
+/* 手機 */
+@media (max-width: 570px) {
+  .background-phone {
+    width: 100%;
+    background-image: url("../public/background-phone.png");
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #b3b3b36e;
+  }
+  .background-phone2 {
+    width: 100%;
+    background-image: url("../public/background-phone2.png");
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #b3b3b36e;
+  }
+  .background-container {
+    overflow: hidden;
+  }
+  .phone-hidden {
+    overflow: visible;
+  }
+  /* index設定 */
+  .content {
+    width: 100%;
+  }
+  .btn-entrance {
+    position: absolute;
+    text-align: center;
+    top: calc(0% - 1.5rem);
+    left: calc(25% + 1.2rem);
+    background-color: rgba(255, 255, 255, 0.5); /* 白色背景，50%透明度 */
+    padding: 5px;
+  }
+  .text {
+    display: block;
+    top: calc(80% + 2rem);
+    /* background-color: #edcc71; */
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(189, 119, 119, 0.1);
+    padding: 0px 22px 0px 22px;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  /* company設定 */
+  .inform {
+    color: red;
+    font-size: 1.6rem;
+    top: calc(0% - 9rem);
+  }
+  .btn-ticket {
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: absolute;
+    padding: 5px 12px;
+    top: calc(0%);
+    left: 0.25rem;
+  }
+  .form-control {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: absolute;
+    padding: 6px 0px;
+    width: 16.5rem;
+    top: calc(0%);
+    left: calc(25% + 1.75rem);
+  }
+  .btn-get-ticket {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: calc(25% + 3rem);
+    padding: 6px 15px;
+    border: none;
+    border-radius: 10px;
+  }
+  /* newForm */
+  .inform-newForm {
+    font-size: 1.2rem;
+    top: -9rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+  }
+  .inform-newForm-2 {
+    font-size: 0.9rem;
+    top: -5.5rem;
+  }
+  .company-name {
+    font-size: 1.35rem;
+    top: -1.5rem;
+    width: 15rem;
+    /* transform: translate(-50%, -50%); */
+    border-radius: 10px;
+    padding: 0.6rem;
+  }
+  .btn-form {
+    position: relative;
+    font-size: 0.85rem;
+    width: 13rem;
+    padding: 6px;
+    left: 0.5rem;
+    top: -0.5rem;
+  }
+  .input-form {
+    position: relative;
+    top: -0.5rem;
+    left: -0.65rem;
+    font-size: 0.85rem;
+    width: 11.5rem;
+    padding: 4px;
+  }
+  .btn-get-form {
+    padding: 8px 6px;
+    width: 7rem;
+    font-size: 1.35rem;
+    top: calc(50% + 8rem);
+    left: calc(25% + 2.85rem);
+  }
+  .font-lg {
+    font-size: 0.7rem;
+  }
+  .phone-5 {
+    padding-bottom: 0.5rem !important;
+  }
+}
+@media screen and (max-width: 570px) and (max-height: calc(100vw + 440px)) {
+  .btn-entrance {
+    position: absolute;
+    text-align: center;
+    top: calc(0% - 10px);
+    background-color: rgba(255, 255, 255, 0.5); /* 白色背景，50%透明度 */
+    padding: 5px;
+  }
+  .text {
+    display: block;
+    top: calc(80% + 1rem);
+    /* background-color: #edcc71; */
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(189, 119, 119, 0.1);
+    padding: 15px 5px;
+    color: black;
+    font-size: 0.9rem;
+  }
+  .btn-ticket {
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: absolute;
+    padding: 5px 12px;
+    top: calc(0%);
+    left: 0.15rem;
+  }
+  .form-control {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: absolute;
+    padding: 6px 0px;
+    width: 14rem;
+    top: calc(0%);
+    left: calc(25% + 2.3rem);
+  }
+  /* newForm */
+  .inform-newForm {
+    font-size: 1.2rem;
+    top: -6.5rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+  }
+  .inform-newForm-2 {
+    font-size: 0.83rem;
+    top: -3rem;
+  }
+  .company-name {
+    font-size: 1.45rem;
+    top: 0.5rem;
+    width: 15rem;
+    border-radius: 10px;
+    padding: 0.6rem;
+  }
+  .btn-form {
+    position: relative;
+    font-size: 0.85rem;
+    width: 13rem;
+    padding: 6px 0px;
+    left: 0.5rem;
+    top: 1.75rem;
+  }
+  .input-form {
+    top: 1.75rem;
+    left: -0.85rem;
+    font-size: 0.85rem;
+    width: 11rem;
+    padding: 3.5px 0px;
+  }
+  .btn-get-form {
+    padding: 8px 6px;
+    width: 7rem;
+    font-size: 1.35rem;
+    top: calc(85% + 4rem);
+    left: calc(25% + 2rem);
+  }
+  .font-lg {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 570px) and (max-height: calc(100vw + 432px)) {
+  .text {
+    display: block;
+    top: calc(80% + 3.5rem);
+    /* background-color: #edcc71; */
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(189, 119, 119, 0.1);
+    padding: 7px 5px;
+    color: black;
+    font-size: 1rem;
+  }
+
+  .btn-ticket {
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: absolute;
+    padding: 5px 12px;
+    top: calc(0%);
+    left: 1rem;
+  }
+  .form-control {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: absolute;
+    padding: 6px 0px;
+    width: 15rem;
+    top: calc(0%);
+    left: calc(25% + 2.3rem);
+  }
+  /* newForm */
+  .inform-newForm {
+    font-size: 1.2rem;
+    top: -5rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+  }
+  .inform-newForm-2 {
+    font-size: 0.9rem;
+    top: -1.5rem;
+  }
+  .company-name {
+    font-size: 1.35rem;
+    top: 2.35rem;
+    width: 15rem;
+    border-radius: 10px;
+    padding: 0.6rem;
+  }
+  .btn-form {
+    position: relative;
+    font-size: 0.85rem;
+    width: 13rem;
+    padding: 6px 0px;
+    left: 0.5rem;
+    top: 3rem;
+  }
+  .input-form {
+    top: 3rem;
+    left: -0.5rem;
+    font-size: 0.85rem;
+    width: 11.5rem;
+    padding: 3.5px 0px;
+  }
+  .btn-get-form {
+    padding: 8px 6px;
+    width: 7rem;
+    font-size: 1.35rem;
+    top: calc(85% + 6rem);
+    left: calc(25% + 3rem);
+  }
+  .font-lg {
+    font-size: 0.7rem;
+  }
+  .phone-5 {
+    padding-bottom: 0.5rem !important;
+  }
+}
+
+@media screen and (max-width: 570px) and (max-height: calc(100vw + 400px)) {
+  .text {
+    display: block;
+    top: calc(80% + 3rem);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(189, 119, 119, 0.1);
+    padding: 0px 5px;
+    color: black;
+    /* font-weight: bold; */
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .btn-ticket {
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: absolute;
+    padding: 5px 12px;
+    top: calc(0%);
+    left: 0.15rem;
+  }
+  .form-control {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: absolute;
+    padding: 6px 0px;
+    width: 14rem;
+    top: calc(0%);
+    left: calc(25% + 2.3rem);
+  }
+  /* newForm */
+  .inform-newForm {
+    font-size: 1.2rem;
+    top: -5rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+  }
+  .inform-newForm-2 {
+    font-size: 0.83rem;
+    top: -1.5rem;
+  }
+  .company-name {
+    font-size: 1.45rem;
+    top: 2.35rem;
+    width: 15rem;
+    border-radius: 10px;
+    padding: 0.6rem;
+  }
+  .btn-form {
+    position: relative;
+    font-size: 0.85rem;
+    width: 13rem;
+    padding: 6px 0px;
+    left: 0.5rem;
+    top: 3rem;
+  }
+  .input-form {
+    top: 3rem;
+    left: -0.85rem;
+    font-size: 0.85rem;
+    width: 11rem;
+    padding: 3.5px 0px;
+  }
+  .btn-get-form {
+    padding: 8px 6px;
+    width: 7rem;
+    font-size: 1.35rem;
+    top: calc(85% + 5.15rem);
+    left: calc(25% + 1.85rem);
+  }
+  .font-lg {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 570px) and (max-height: calc(100vw + 335px)) {
+  .btn-entrance {
+    position: absolute;
+    text-align: center;
+    top: calc(0% + 3.5rem);
+    background-color: rgba(255, 255, 255, 0.5); /* 白色背景，50%透明度 */
+    padding: 5px;
+  }
+  .text {
+    display: block;
+    top: calc(80% + 3rem);
+    /* background-color: #edcc71; */
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(189, 119, 119, 0.1);
+    padding: 8px 0px;
+    color: black;
+    /* font-weight: bold; */
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .btn-ticket {
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: absolute;
+    padding: 5px 10px;
+    top: calc(0%);
+    left: 0.1rem;
+  }
+}
+@media screen and (max-width: 570px) and (max-height: calc(100vw + 322px)) {
+  .btn-entrance {
+    position: absolute;
+    text-align: center;
+    top: calc(0% + 3.5rem);
+    background-color: rgba(255, 255, 255, 0.5); /* 白色背景，50%透明度 */
+    padding: 5px;
+  }
+  .text {
+    display: none;
+  }
+  .btn-ticket {
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: absolute;
+    padding: 5px 10px;
+    top: 0%;
+    left: 0.35rem;
+  }
+  .form-control {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: absolute;
+    padding: 6px 0px;
+    width: 16.5rem;
+    top: calc(0%);
+    left: calc(25% + 1.75rem);
+  }
+  /* newForm */
+  .inform-newForm {
+    font-size: 1.1rem;
+    top: -1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+  }
+  .inform-newForm-2 {
+    font-size: 0.8rem;
+    top: 2.25rem;
+  }
+  .company-name {
+    font-size: 1.35rem;
+    top: 5.35rem;
+    width: 15rem;
+    /* transform: translate(-50%, -50%); */
+    border-radius: 10px;
+    padding: 0.6rem;
+  }
+  .btn-form {
+    position: relative;
+    font-size: 0.85rem;
+    width: 13rem;
+    padding: 6px 0px;
+    left: 0.5rem;
+    top: 6rem;
+  }
+  .input-form {
+    top: 6rem;
+    left: -0.5rem;
+    font-size: 0.85rem;
+    width: 10.5rem;
+    padding: 3.5px 0px;
+  }
+  .btn-get-form {
+    padding: 8px 6px;
+    width: 7rem;
+    font-size: 1.35rem;
+    top: calc(85% + 8rem);
+    left: calc(25% + 1.85rem);
+  }
+  .font-lg {
+    font-size: 0.7rem;
+  }
+  .phone-5 {
+    padding-bottom: 0.5rem !important;
+  }
+}
+
+/* sm */
+@media (min-width: 576px) {
+  /* QRCODE */
+  .inform-qrcode {
+    font-size: 0.8rem;
+    top: calc(30% - 2.15rem);
+  }
+
+  .background-ticket-2 {
+    background-image: url("../public/background-tablet2.png");
+  }
+
+  .btn-login {
+    color: black;
+    font-size: 1.35rem;
+    font-weight: bold;
+    position: absolute;
+    top: calc(55% + 3rem);
+    padding: 10px 15px;
+  }
+  .qr-codes-container {
+    max-width: 80%;
+    overflow-x: auto;
+    top: calc(65% + 3.5rem);
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  /* 背景設定 */
+  /* home */
+  .btn-entrance {
+    font-size: 1.5rem;
+    width: 12rem;
+    padding: 1rem 0rem;
+  }
+  /* company */
+  .inform {
+    font-size: 1.5rem;
+    top: 0;
+    margin-top: 3.5rem;
+  }
+  .btn-ticket {
+    font-size: 1.3rem;
+    margin-bottom: 5rem;
+    position: static;
+    padding: 10px;
+  }
+  .form-control {
+    font-size: 1rem;
+    width: 60%;
+    margin-bottom: 5rem;
+  }
+  .btn-get-ticket {
+    font-size: 1.3rem;
+    top: 15rem;
+  }
+  /* newform */
+  .md-container {
+    max-width: 875px !important;
+  }
+
+  .inform-newForm {
+    font-size: 1rem;
+    top: -5.5rem;
+  }
+
+  .inform-newForm-2 {
+    font-size: 1rem;
+    top: -4rem;
+  }
+
+  .company-name {
+    font-size: 1.15rem;
+    top: -9%;
+    left: 50%;
+
+    border-radius: 10px;
+    padding: 0.8rem 1.35rem;
+  }
+  .btn-form {
+    font-size: 0.9rem;
+    width: 16rem;
+    padding: 10px;
+    position: absolute;
+    left: calc(50% - 16rem);
+  }
+
+  .btn-get-form {
+    font-size: 1rem;
+    width: 9rem;
+    padding: 10px;
+    top: 15.5rem;
+  }
+
+  .input-form {
+    font-size: 1rem;
+    width: 15rem;
+    border-radius: 10px;
+    padding: 7px;
+    /* padding: 9px; */
+  }
+  /* QRCODE */
+  .inform-qrcode {
+    font-size: 1rem;
+    top: 15%;
+  }
+
+  .qr-code-md-title {
+    font-size: 12px;
+    font-weight: bold;
+    /* position: absolute; */
+  }
+  .service {
+    top: calc(35%);
+    font-size: 1rem;
+  }
+  .btn-login {
+    font-size: 1.35rem;
+    top: calc(55% + 3rem);
+    padding: 10px 15px;
+  }
+  .qr-codes-container {
+    max-width: 80%;
+    overflow-x: auto;
+    top: calc(65% + 3.5rem);
+  }
+}
+
+/* lg */
+@media (min-width: 992px) {
+  /* 背景設定 */
+  .background-ticket {
+    width: 100%;
+    height: 100%;
+    background-image: url("../public/ticket-new.png");
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .background-ticket-2 {
+    background-image: url("../public/ticket-2.png");
+  }
+  /* home */
+  .btn-entrance {
+    font-size: 1.8rem;
+    width: 14rem;
+    padding: 1.3rem 0rem;
+  }
+  /* company */
+  .inform {
+    color: red;
+    font-size: 1.6rem;
+    top: 0;
+  }
+  /* company */
+  .btn-get-ticket {
+    font-size: 1.5rem;
+    position: static;
+    padding: 10px 15px;
+  }
+  /* newform */
+  .pb-lg-6 {
+    padding-bottom: 3.15rem !important;
+  }
+
+  .input-form {
+    font-size: 1.1rem;
+    width: 18.5rem;
+    height: 8vh;
+    border-radius: 10px;
+    /* padding: 8px; */
+  }
+
+  .inform-newForm {
+    font-size: 1.3rem;
+    top: -8.5rem;
+  }
+  .inform-newForm-2 {
+    font-size: 1.3rem;
+    top: -6.5rem;
+  }
+  .company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: calc(0% - 2rem);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 0.6rem;
+  }
+
+  .btn-form {
+    font-size: 1rem;
+    width: 16rem;
+    padding: 11px;
+    left: calc(50% - 16rem);
+  }
+  .btn-get-form {
+    font-size: 1.5rem;
+    width: 10rem;
+    padding: 8px 12px;
+    top: 17rem;
+  }
+  .font-lg {
+    font-size: 1rem;
+  }
+  /* QRCODE */
+  .inform-qrcode {
+    font-size: 1.2rem;
+    top: 1.5rem;
+  }
+  .service {
+    top: calc(25% + 2rem);
+    font-size: 1.25rem;
+  }
+  .btn-login {
+    font-size: 1.5rem;
+    top: calc(55% + 3.5rem);
+    padding: 10px 15px;
+  }
+  .container {
+    max-width: 960px !important;
+  }
+}
+
+@media (min-width: 1285px) {
+  /* index */
+  .btn-entrance {
+    font-size: 2.25rem;
+    width: 16rem;
+    padding: 1.3rem 1rem;
+    margin-top: 2rem;
+  }
+  /* company */
+  .inform {
+    font-size: 2rem;
+  }
+  .btn-ticket {
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+    padding: 10px;
+  }
+  .form-control {
+    font-size: 1.5rem;
+    width: 65%;
+    margin-bottom: 5rem;
+  }
+
+  .btn-get-ticket {
+    font-size: 2rem;
+    position: absolute;
+    padding: 12px 20px;
+  }
+
+  /* newForm */
+  .company-name {
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: calc(0% - 2.85rem);
+    left: 50%;
+
+    padding: 1rem 1.35rem;
+  }
+  .btn-form {
+    font-size: 1.35rem;
+    width: 18rem;
+    margin: 2.5px 0px;
+    padding: 20px 11px;
+    /* height: 7vh; */
+    left: calc(40% - 6.4rem);
+  }
+  .input-form {
+    font-size: 1.35rem;
+    width: 20.5rem;
+    /* height: 7.5vh; */
+    border-radius: 10px;
+    /* padding: 8px; */
+    margin: 2px 0px;
+  }
+  .btn-get-form {
+    font-size: 2.15rem;
+    width: 12rem;
+    padding: 10px 12px;
+    top: calc(75% + 8.5rem);
+  }
+  .inform-newForm {
+    font-size: 1.75rem;
+    top: -10.5rem;
+  }
+  .inform-newForm-2 {
+    font-size: 1.75rem;
+    top: -8rem;
+  }
+  .font-lg {
+    font-size: 1.25rem;
+  }
+  /* QRCODE */
+  .inform-qrcode {
+    font-size: 1.6rem;
+    top: 10%;
+    text-align: end;
+  }
+  .service {
+    top: calc(30%);
+    font-size: 1.6rem;
+  }
+  .btn-login {
+    font-size: 2.15rem;
+    top: calc(55% + 1rem);
+    padding: 15px 20px;
+  }
+}
